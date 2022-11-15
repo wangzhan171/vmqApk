@@ -141,6 +141,7 @@ public class NeNotificationService2  extends NotificationListenerService {
 
 
                 if (pkg.equals("com.eg.android.AlipayGphone")){
+                     appPush(content, Double.valueOf(money));
                     if (content!=null && !content.equals("")) {
                         if (content.indexOf("通过扫码向你付款")!=-1 || content.indexOf("成功收款")!=-1){
                             String money = getMoney(content);
